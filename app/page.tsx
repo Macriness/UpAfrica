@@ -20,7 +20,7 @@ export default function RegisterPage() {
   return (
     <div className="relative min-h-screen flex flex-col items-center justify-center bg-black p-4">
       {/* 🌆 Fond */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 w-full h-full">
         <img
           src="/Container.png"
           alt="Background"
@@ -54,7 +54,7 @@ export default function RegisterPage() {
       {/* 🟧 Carte centrale */}
       {!showConfirm && (
         <div className="relative z-10 w-full max-w-sm bg-[#1e1e1e] rounded-2xl p-6 shadow-xl space-y-6">
-          {/* Barre de progression (juste les numéros) */}
+          {/* Barre de progression */}
           <div>
             <div className="flex rounded-lg overflow-hidden">
               {[1, 2, 3].map((s) => (
@@ -77,7 +77,8 @@ export default function RegisterPage() {
             <Info className="w-5 h-5 text-orange-500 mt-0.5" />
             <p className="text-sm">
               Les champs suivis d’une étoile{" "}
-              <span className="text-orange-400 font-semibold">*</span> sont obligatoires
+              <span className="text-orange-400 font-semibold">*</span> sont
+              obligatoires
             </p>
           </div>
 
@@ -114,6 +115,5 @@ export default function RegisterPage() {
     </div>
   );
 }
-
 
 
