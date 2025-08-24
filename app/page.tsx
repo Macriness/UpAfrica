@@ -24,10 +24,10 @@ export default function RegisterPage() {
         <img
           src="/Container.png"
           alt="Background"
-          className="w-full h-full object-cover opacity-50"
+          className="w-full h-full object-cover opacity-40"
         />
-        {/* Overlay plus clair sur mobile */}
-        <div className="absolute inset-0 bg-black/30 md:bg-black/60"></div>
+        {/* Voile noir : plus léger sur mobile */}
+        <div className="absolute inset-0 bg-black/20 md:bg-black/20"></div>
       </div>
 
       {/* 🟧 Titre principal (au-dessus de la carte) */}
@@ -106,3 +106,4 @@ export default function RegisterPage() {
     </div>
   );
 }
+
