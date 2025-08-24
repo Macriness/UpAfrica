@@ -40,6 +40,7 @@ export default function StepThree() {
             {form.motivation.length}/500 caractères
           </div>
         </div>
+      </div>
 
         {/* Contribution */}
         <div>
