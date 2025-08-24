@@ -9,41 +9,34 @@ export default function StepThree() {
   });
 
   return (
-    <div className="h-full flex flex-col">
-      {/* Form compact */}
-      <div className="space-y-3 sm:space-y-4 flex-1">
-        {/* Motivation */}
-        <div>
-          <label className="text-xs text-gray-300 mb-1 block">
-            Motivation pour rejoindre UpAfrica *
-          </label>
-          <textarea
-            className="w-full rounded bg-[#2a2a2a] border border-[#444] p-2 text-xs text-white focus:ring-1 focus:ring-orange-500 resize-none"
-            placeholder="Je souhaite rejoindre UpAfrica pour contribuer..."
-            rows={4}
-            value={form.motivation}
-            onChange={(e) => setForm({ ...form, motivation: e.target.value })}
-          />
-          <div className="text-right text-xs text-gray-500 mt-1">
-            {form.motivation.length}/500 caractères
-          </div>
+    <div className="flex flex-col space-y-5">
+      {/* Motivation */}
+      <div>
+        <label className="text-xs text-gray-300">Motivation pour rejoindre UpAfrica *</label>
+        <textarea
+          className="w-full mt-1 rounded bg-[#2a2a2a] border border-[#444] p-2.5 text-sm text-white focus:ring-1 focus:ring-orange-500 resize-none"
+          placeholder="Je souhaite rejoindre UpAfrica en tant que membre..."
+          rows={4}
+          value={form.motivation}
+          onChange={(e) => setForm({ ...form, motivation: e.target.value })}
+        />
+        <div className="text-right text-xs text-gray-500 mt-1">
+          {form.motivation.length}/500 caractères
         </div>
+      </div>
 
-        {/* Contribution */}
-        <div>
-          <label className="text-xs text-gray-300 mb-1 block">
-            Comment comptez-vous contribuer ? *
-          </label>
-          <textarea
-            className="w-full rounded bg-[#2a2a2a] border border-[#444] p-2 text-xs text-white focus:ring-1 focus:ring-orange-500 resize-none"
-            placeholder="Je peux apporter mon expertise..."
-            rows={4}
-            value={form.contribution}
-            onChange={(e) => setForm({ ...form, contribution: e.target.value })}
-          />
-          <div className="text-right text-xs text-gray-500 mt-1">
-            {form.contribution.length}/500 caractères
-          </div>
+      {/* Contribution */}
+      <div>
+        <label className="text-xs text-gray-300">Comment comptez-vous contribuer ? *</label>
+        <textarea
+          className="w-full mt-1 rounded bg-[#2a2a2a] border border-[#444] p-2.5 text-sm text-white focus:ring-1 focus:ring-orange-500 resize-none"
+          placeholder="Je peux apporter mon expertise..."
+          rows={4}
+          value={form.contribution}
+          onChange={(e) => setForm({ ...form, contribution: e.target.value })}
+        />
+        <div className="text-right text-xs text-gray-500 mt-1">
+          {form.contribution.length}/500 caractères
         </div>
       </div>
     </div>

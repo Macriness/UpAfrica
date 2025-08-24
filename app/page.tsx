@@ -31,7 +31,7 @@ export default function RegisterPage() {
 
       {/* Contenu */}
       <div className="relative z-10 flex flex-col items-center justify-start min-h-screen p-4">
-        {/* 🟧 Titre principal */}
+        {/* 🟧 Header */}
         <div className="mb-6 flex items-center gap-2 w-full max-w-sm">
           {step > 1 && (
             <button
@@ -41,29 +41,22 @@ export default function RegisterPage() {
               <ArrowLeft size={20} />
             </button>
           )}
-          <h1 className="text-lg font-semibold text-center flex-1">
-            {step === 1 ? (
-              <>
-                <span className="text-orange-500">UpAfrica</span>{" "}
-                <span className="text-white">Formulaire membre UpAfrica</span>
-              </>
-            ) : (
-              <span className="text-white">Formulaire membre UpAfrica</span>
-            )}
+          <h1 className="text-base font-medium text-white flex-1 text-center">
+            Formulaire membre UpAfrica
           </h1>
         </div>
 
         {/* 🟧 Carte centrale */}
         {!showConfirm && (
-          <div className="w-full max-w-sm bg-[#1e1e1e] rounded-2xl p-6 shadow-xl space-y-6">
+          <div className="w-full max-w-sm bg-[#1e1e1e] rounded-2xl p-5 shadow-xl space-y-6">
             {/* Barre de progression */}
-            <div>
-              <div className="flex rounded-lg overflow-hidden">
+            <div className="flex items-center justify-between">
+              <div className="flex flex-1 rounded-lg overflow-hidden">
                 {[1, 2, 3].map((s) => (
                   <div
                     key={s}
-                    className={`flex-1 h-10 flex items-center justify-center text-sm font-bold ${
-                      step >= s
+                    className={`flex-1 h-9 flex items-center justify-center text-sm font-bold ${
+                      step === s
                         ? "bg-orange-500 text-white"
                         : "bg-[#2a2a2a] text-gray-400"
                     }`}
@@ -72,6 +65,9 @@ export default function RegisterPage() {
                   </div>
                 ))}
               </div>
+              <span className="ml-3 text-xs font-medium text-orange-500">
+                Étape {step}/4
+              </span>
             </div>
 
             {/* 🟧 Boîte d’info */}
@@ -95,16 +91,16 @@ export default function RegisterPage() {
               {step < 3 ? (
                 <button
                   onClick={() => setStep(step + 1)}
-                  className="px-5 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded-lg text-sm font-medium shadow-md transition"
+                  className="px-6 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded-lg text-sm font-medium shadow-md transition"
                 >
                   Suivant →
                 </button>
               ) : (
                 <button
                   onClick={() => setShowConfirm(true)}
-                  className="px-5 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded-lg text-sm font-medium shadow-md transition"
+                  className="px-6 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded-lg text-sm font-medium shadow-md transition"
                 >
-                  Envoyer
+                  Envoyer le formulaire →
                 </button>
               )}
             </div>
@@ -117,5 +113,4 @@ export default function RegisterPage() {
     </div>
   );
 }
-
 
