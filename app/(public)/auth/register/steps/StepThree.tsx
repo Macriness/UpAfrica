@@ -19,7 +19,7 @@ export default function StepThree() {
       </div>
 
       {/* Form compact */}
-      <div className="space-y-3 flex-1">
+      <div className="space-y-3 sm:space-y-4 flex-1">
         {/* Motivation */}
         <div>
           <label className="text-xs text-gray-300 mb-1 block">
@@ -57,4 +57,3 @@ export default function StepThree() {
     </div>
   );
 }
-
