@@ -9,14 +9,6 @@ export default function StepTwo() {
 
   return (
     <div className="h-full flex flex-col">
-      {/* Info obligatoire */}
-      <div className="flex items-center gap-1 bg-[#2a2a2a] text-gray-300 text-xs p-1.5 rounded mb-3 border border-[#3a3a3a]">
-        <span className="text-orange-500 font-bold text-xs">ℹ</span>
-        <span className="text-xs">
-          <span className="text-orange-500">*</span> = obligatoire
-        </span>
-      </div>
-
       {/* Section titre */}
       <h3 className="text-white font-medium text-sm mb-3">Statut professionnel</h3>
 
@@ -37,3 +29,4 @@ export default function StepTwo() {
     </div>
   );
 }
+

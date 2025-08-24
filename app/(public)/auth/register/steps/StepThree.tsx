@@ -10,14 +10,6 @@ export default function StepThree() {
 
   return (
     <div className="h-full flex flex-col">
-      {/* Info obligatoire */}
-      <div className="flex items-center gap-1 bg-[#2a2a2a] text-gray-300 text-xs p-1.5 rounded mb-3 border border-[#3a3a3a]">
-        <span className="text-orange-500 font-bold text-xs">ℹ</span>
-        <span className="text-xs">
-          <span className="text-orange-500">*</span> = obligatoire
-        </span>
-      </div>
-
       {/* Form compact */}
       <div className="space-y-3 sm:space-y-4 flex-1">
         {/* Motivation */}
@@ -57,3 +49,4 @@ export default function StepThree() {
     </div>
   );
 }
+

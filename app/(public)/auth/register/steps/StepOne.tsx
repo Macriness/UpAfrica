@@ -15,14 +15,6 @@ export default function StepOne() {
 
   return (
     <div className="h-full flex flex-col">
-      {/* Info obligatoire */}
-      <div className="flex items-center gap-1 bg-[#2a2a2a] text-gray-300 text-[11px] p-2 rounded mb-3 border border-[#3a3a3a]">
-        <span className="text-orange-500 font-bold text-[11px]">ℹ</span>
-        <span>
-          <span className="text-orange-500">*</span> = obligatoire
-        </span>
-      </div>
-
       {/* Form mieux espacé */}
       <div className="space-y-3 flex-1">
         {/* Prénom + Nom */}
