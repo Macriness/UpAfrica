@@ -19,7 +19,7 @@ export default function RegisterPage() {
 
   return (
     <div className="relative min-h-screen flex items-center justify-center bg-black px-4 sm:px-6 lg:px-8">
-      {/* 🌆 Fond avec ton image Container.png */}
+      {/* 🌆 Fond avec ton  Container.png */}
       <div className="absolute inset-0">
         <img
           src="/Container.png"
