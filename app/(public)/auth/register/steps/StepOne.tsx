@@ -18,7 +18,7 @@ export default function StepOne() {
       {/* Form mieux espacé */}
       <div className="space-y-5 flex-1">
         {/* Prénom + Nom */}
-        <div className="flex gap-3">
+        <div className="flex flex-col md:flex-row gap-3">
           <div className="flex-1">
             <label className="text-sm text-gray-300">Prénom *</label>
             <input
@@ -66,7 +66,7 @@ export default function StepOne() {
         </div>
 
         {/* Date + Nationalité */}
-        <div className="flex gap-3">
+        <div className="flex flex-col md:flex-row gap-3">
           <div className="flex-1">
             <label className="text-sm text-gray-300">Date de naissance *</label>
             <input
@@ -83,14 +83,18 @@ export default function StepOne() {
               className="w-full mt-2 rounded-lg bg-[#2a2a2a] border border-[#444] p-3 text-sm text-white focus:ring-2 focus:ring-orange-500"
               placeholder="Bénin"
               value={form.nationality}
-              onChange={(e) => setForm({ ...form, nationality: e.target.value })}
+              onChange={(e) =>
+                setForm({ ...form, nationality: e.target.value })
+              }
             />
           </div>
         </div>
 
         {/* Username */}
         <div>
-          <label className="text-sm text-gray-300">Nom d&apos;utilisateur *</label>
+          <label className="text-sm text-gray-300">
+            Nom d&apos;utilisateur *
+          </label>
           <input
             type="text"
             className="w-full mt-2 rounded-lg bg-[#2a2a2a] border border-[#444] p-3 text-sm text-white focus:ring-2 focus:ring-orange-500"
