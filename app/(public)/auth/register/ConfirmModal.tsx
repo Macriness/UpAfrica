@@ -4,16 +4,18 @@ import { CheckCircle } from "lucide-react";
 
 interface ConfirmModalProps {
   onClose: () => void;
+  message?: string;
 }
 
-export default function ConfirmModal({ onClose }: ConfirmModalProps) {
+export default function ConfirmModal({ onClose, message }: ConfirmModalProps) {
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
       <div className="bg-[#222] p-6 rounded-2xl shadow-[8px_8px_16px_#111,-8px_-8px_16px_#2a2a2a] text-center max-w-sm w-full">
         <CheckCircle className="w-12 h-12 text-green-500 mx-auto mb-4" />
         <h2 className="text-xl font-bold text-white mb-2">Inscription réussie</h2>
         <p className="text-gray-400 mb-6">
-          Félicitations 🎉 Vous êtes maintenant membre officiel HCDAF.
+          {
+          "Félicitations...Un mail vous a été envoyé contenant vos identifiants de connexion à l'application mobile UpAfrica."}
         </p>
         <button
           onClick={onClose}
