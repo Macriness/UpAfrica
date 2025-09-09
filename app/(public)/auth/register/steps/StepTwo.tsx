@@ -20,7 +20,7 @@ export default function StepTwo({ formData, setFormData }: Props) {
         </label>
         <input
           type="text"
-          className="w-full h-8 bg-[#343434] border border-[#444] rounded-[6px] px-[10px] py-[8px] text-sm text-gray-300 placeholder:text-gray-500 focus:ring-1 focus:ring-orange-500 focus:border-orange-500 outline-none"
+          className="w-full h-8 bg-[#343434] rounded-[6px] px-[10px] py-[8px] text-sm text-gray-300 placeholder:text-gray-500 focus:ring-1 focus:ring-orange-500 focus:border-orange-500 outline-none"
           placeholder="Entrepreneur Tech"
           value={formData.profession}
           onChange={(e) =>

@@ -22,7 +22,7 @@ export default function StepOne({ formData, setFormData }: Props) {
             <label className="text-sm text-gray-300">Prénom *</label>
             <input
               type="text"
-              className="w-full mt-2 rounded-lg bg-[#2a2a2a] border border-[#444] p-3 text-sm text-white focus:ring-2 focus:ring-orange-500"
+              className="w-full mt-2 rounded-lg bg-[#2a2a2a] p-3 text-sm text-white focus:ring-2 focus:ring-orange-500"
               placeholder="Lorem"
               value={formData.firstName}
               onChange={(e) =>
@@ -34,7 +34,7 @@ export default function StepOne({ formData, setFormData }: Props) {
             <label className="text-sm text-gray-300">Nom *</label>
             <input
               type="text"
-              className="w-full mt-2 rounded-lg bg-[#2a2a2a] border border-[#444] p-3 text-sm text-white focus:ring-2 focus:ring-orange-500"
+              className="w-full mt-2 rounded-lg bg-[#2a2a2a] p-3 text-sm text-white focus:ring-2 focus:ring-orange-500"
               placeholder="Ipsum"
               value={formData.lastName}
               onChange={(e) =>
@@ -48,7 +48,7 @@ export default function StepOne({ formData, setFormData }: Props) {
           <label className="text-sm text-gray-300">Email *</label>
           <input
             type="email"
-            className="w-full mt-2 rounded-lg bg-[#2a2a2a] border border-[#444] p-3 text-sm text-white focus:ring-2 focus:ring-orange-500"
+            className="w-full mt-2 rounded-lg bg-[#2a2a2a] p-3 text-sm text-white focus:ring-2 focus:ring-orange-500"
             placeholder="email@exemple.com"
             value={formData.email}
             onChange={(e) =>
@@ -61,7 +61,7 @@ export default function StepOne({ formData, setFormData }: Props) {
           <label className="text-sm text-gray-300">Téléphone *</label>
           <input
             type="tel"
-            className="w-full mt-2 rounded-lg bg-[#2a2a2a] border border-[#444] p-3 text-sm text-white focus:ring-2 focus:ring-orange-500"
+            className="w-full mt-2 rounded-lg bg-[#2a2a2a] p-3 text-sm text-white focus:ring-2 focus:ring-orange-500"
             placeholder="+225 07 89 45 67 23"
             value={formData.phone}
             onChange={(e) =>
@@ -75,7 +75,7 @@ export default function StepOne({ formData, setFormData }: Props) {
             <label className="text-sm text-gray-300">Date de naissance *</label>
             <input
               type="date"
-              className="w-full mt-2 rounded-lg bg-[#2a2a2a] border border-[#444] p-3 text-sm text-white focus:ring-2 focus:ring-orange-500"
+              className="w-full mt-2 rounded-lg bg-[#2a2a2a] p-3 text-sm text-white focus:ring-2 focus:ring-orange-500"
               value={formData.dob}
               onChange={(e) =>
                 setFormData((p: any) => ({ ...p, dob: e.target.value }))
@@ -86,7 +86,7 @@ export default function StepOne({ formData, setFormData }: Props) {
             <label className="text-sm text-gray-300">Nationalité *</label>
             <input
               type="text"
-              className="w-full mt-2 rounded-lg bg-[#2a2a2a] border border-[#444] p-3 text-sm text-white focus:ring-2 focus:ring-orange-500"
+              className="w-full mt-2 rounded-lg bg-[#2a2a2a] p-3 text-sm text-white focus:ring-2 focus:ring-orange-500"
               placeholder="Bénin"
               value={formData.nationality}
               onChange={(e) =>
@@ -100,7 +100,7 @@ export default function StepOne({ formData, setFormData }: Props) {
           <label className="text-sm text-gray-300">Nom d&apos;utilisateur *</label>
           <input
             type="text"
-            className="w-full mt-2 rounded-lg bg-[#2a2a2a] border border-[#444] p-3 text-sm text-white focus:ring-2 focus:ring-orange-500"
+            className="w-full mt-2 rounded-lg bg-[#2a2a2a] p-3 text-sm text-white focus:ring-2 focus:ring-orange-500"
             placeholder="nom_utilisateur"
             value={formData.username}
             onChange={(e) =>

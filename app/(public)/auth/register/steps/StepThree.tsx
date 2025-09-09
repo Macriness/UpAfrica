@@ -11,7 +11,7 @@ export default function StepThree({ formData, setFormData }: Props) {
 
   // Classes communes pour les deux textareas pour garantir la cohérence
   const textAreaClasses =
-    "w-full h-[94px] bg-[#343434] border border-[#444] rounded-[9.37px] px-[11.24px] py-[3.75px] text-sm text-gray-300 placeholder:text-gray-500 focus:ring-1 focus:ring-orange-500 focus:border-orange-500 resize-none outline-none";
+    "w-full h-[94px] bg-[#343434] rounded-[9.37px] px-[11.24px] py-[3.75px] text-sm text-gray-300 placeholder:text-gray-500 focus:ring-1 focus:ring-orange-500 focus:border-orange-500 resize-none outline-none";
 
   return (
     <div className="flex flex-col w-full">
